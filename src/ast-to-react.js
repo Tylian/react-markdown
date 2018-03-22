@@ -137,6 +137,10 @@ function getNodeProps(node, key, opts, renderer, parent, index) {
     default:
   }
 
+  if(typeof opts.propsHandler === "function") {
+    Object.assign(props, opts.propsHandler(node, ke{y, opts, renderer, parent, index));
+  }
+
   if (typeof renderer !== 'string' && node.value) {
     props.value = node.value
   }
