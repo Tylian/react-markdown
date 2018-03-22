@@ -8,6 +8,7 @@
     "react-component"
   ],
   "main": "lib/react-markdown.js",
+  "module": "src/react-markdown.js",
   "scripts": {
     "build": "npm run clean && npm run compile && NODE_ENV=production webpack -p && npm run build:demo",
     "build:demo": "NODE_ENV=production webpack -p --config webpack.config.demo.js",
